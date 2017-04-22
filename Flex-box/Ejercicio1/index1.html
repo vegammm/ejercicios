@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flex-box ejer1</title>
+  </head>
+<style >
+  .flex-container{
+    width: 100%;
+    max-width:960px;
+    margin:20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: center;
+    align-items: center;
+    align-content: stretch;*/
+
+    border:2px solid black;
+
+}
+
+
+.item{
+  text-align: center;
+  margin:0 auto;
+  font-size: 15px;
+
+}
+
+header{
+  background-color: red;
+  height:30px;
+  line-height: 30px;
+  flex:1 1 100%;
+}
+
+.aside1{
+  background-color: rgb(207, 177, 21);
+  height: 150px;
+
+  flex:1 1 100px;
+
+
+}
+article{
+  overflow: hidden;
+  background-color: rgb(89, 170, 170);
+  height: 150px;
+  max-width: auto;
+
+  flex:3 1 200px;
+
+}
+article p{
+    font-size: 13px;
+    padding: 30px;
+
+}
+
+.aside2{
+
+background-color: rgb(233, 58, 125);
+height: 150px;
+
+flex:1 1 100px;
+
+
+
+}
+footer {
+  background-color:green;
+  height: 30px;
+  line-height: 30px;
+  flex:1 1 100%;
+}
+
+
+</style>
+
+
+
+
+<body>
+<div class="flex-container">
+
+
+    <header class="item">Header</header>
+
+
+
+        <aside class="item aside1">Aside1</aside>
+
+        <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+
+
+        <aside class="item aside2">Aside2</aside>
+
+
+<footer class="item">Footer </footer>
+
+
+
+</div>
+
+
+
+  </body>
+</html>

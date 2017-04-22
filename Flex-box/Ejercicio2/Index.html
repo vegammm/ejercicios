@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercio2</title>
+    <style>
+    .container{
+        width: 100%;
+        max-width:840px;
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+
+
+    }
+    .imagen{
+        flex:0 0 80px;
+        height: 80px;
+        background-color:rgb(168, 168, 182);
+        border-radius: 10px;
+
+    }
+    .central{
+        display: flex;
+        flex-direction: column;
+
+        flex:1 1 ;
+        height: 80px;
+        justify-content: space-between;
+
+    }
+
+    .titulo{
+        line-height: 8px;
+        margin-left: 5px;
+
+    }
+    h1{
+        font-size: 12px;
+        color:black;
+    }
+    h2{
+        font-size: 10px;
+        color:grey;
+
+    }
+
+    .dos{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+
+    }
+    .boton1{
+        background-color: rgb(168, 168, 182);
+        width: 90px;
+        height: 30px;
+        border-radius: 8px;
+        margin-left: 5px;
+        border:1px solid rgb(168, 168, 182);
+
+    }
+
+
+    .boton2{
+        background-color: white;
+        width: 90px;
+        height: 30px;
+        border-radius: 8px;
+        margin-left: 5px;
+        border:1px solid rgb(168, 168, 182);
+    }
+    .boton1 p {
+        color:rgb(255, 255, 255);
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .boton2 p {
+        color:grey;
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+
+    .todopuntuacion{
+        display: flex;
+        flex-direction: column;
+        flex:0 0 110px;
+        height: 80px;
+        background-color: white;
+        justify-content: space-around;
+
+    }
+
+    .puntuacion{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-around;
+    }
+    .texto{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+    }
+
+    .texto p {
+        font-size:9px;
+        margin:1px 0;
+
+            }
+    p.comentarios{
+        color:rgb(168, 168, 182)
+    }
+    .boton8{
+        width: 30px;
+        height:30px;
+        background-color: rgb(168, 168, 182);
+        border-radius: 9px;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boton8 p{
+        font-size:12px;
+        text-align: center;
+
+
+
+    }
+
+
+    .estrella{
+        width: 30px;
+        height:30px;
+
+        float: right;
+        margin-right: 5px;
+
+    }
+    .estrella img{
+        width: 100%;
+
+    }
+    </style>
+
+
+  </head>
+  <body>
+  <div class="container">
+      <div class="imagen">
+
+      </div>
+      <div class="central">
+          <div class="titulo">
+                <h1>Centro de fisioterapia Guzman Fernandez</h1>
+                <h2>Fisioterapia General</h2>
+          </div>
+          <div class="dos">
+                <div class="boton1">
+                    <p>Reservar Cita</p>
+
+                </div>
+                <div class="boton2">
+                    <p>Pedir presupuesto</p>
+                </div>
+
+          </div>
+
+      </div>
+        <div class="todopuntuacion">
+
+
+          <div class="puntuacion">
+                <div class="texto">
+                    <p class="valoraciones">24 valoraciones</p>
+                    <p class="comentarios">Ver comentarios   -</p>
+                </div>
+                <div class="boton8">
+                    <p>8,9</p>
+                </div>
+          </div>
+            <div class="cajaestrella">
+
+                <div class="estrella">
+                    <img src="star.png" alt="estrella">
+                </div>
+            </div>
+        </div>
+  </div>
+
+  </body>
+</html>
