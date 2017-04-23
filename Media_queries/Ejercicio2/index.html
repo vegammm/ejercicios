@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ejercicio 2 media query</title>
+        <style >
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                font-size: 16px;
+                font-family: sans-serif;
+            }
+
+            .container{
+                margin: 1em auto;
+                background-color: rgba(135, 135, 135, 0.77);
+                width: 90%;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+            }
+            .container h1{
+                padding-bottom: 1em;
+                order: -2;
+                width: 100%;
+                font-size: 26px;
+            }
+            nav{
+                background-color:rgb(76, 224, 48);
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .article{
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .main{
+                background-color: rgb(242, 233, 16);
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            h2{
+                padding-bottom: 1em;
+                font-size: 24px;
+                height: 40px;
+                flex: 1 1 100%;
+            }
+            .texto{
+
+            }
+            figure{
+                display: none;
+            }
+
+            .info{
+                background-color: grey;
+                margin:0.8em 0;
+            }
+            .info h3{
+                padding-bottom: 1em;
+                font-size: 22px;
+            }
+            @media screen and (min-width:480px){
+                .container{
+
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                nav{
+                    background-color:rgb(76, 224, 48);
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    flex:0 0 20%;
+                    order: -1;
+                    height: 55px;
+                }
+                .article{
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    flex:1 1 70%;
+                    /*width: 70%;*/
+
+
+                }
+                h2{
+
+                    order:-1;
+                }
+
+                .main{
+                    display: flex;
+                    flex-direction:wrap;
+                    justify-content: space-between;
+                }
+
+
+
+                .texto{
+                    flex:1 1 60%;
+                    order: 0;
+                    padding-right: 15px;
+                }
+
+                figure{
+                    display:block;
+                    flex:0 0 30%;
+                    height: 150px;
+                    overflow: hidden;
+
+                    order: 1;
+
+                }
+                img{
+                    width: 100%;
+                }
+                .info{
+                    margin:0.8em 0;
+                    margin-top: 0;
+                    /*flex:0 0 70%;
+                    order: 3;
+                    margin:0em 0;
+                    align-self: flex-end;*/
+                }
+
+            }
+            @media screen and (min-width:1000px){
+
+
+                .article{
+                    margin-right: 0;
+                    display: flex;
+                    flex-direction: row;
+
+
+
+                }
+                .main{
+                    flex: 1 1 60%;
+                    margin-right: 15px;
+                }
+
+                .info{
+                    margin:6em 0;
+                    height: auto;
+                    margin-top: 0;
+                    flex: 0 0 20%;
+                    /*flex:0 0 70%;
+                    order: 3;
+                    margin:0em 0;
+                    align-self: flex-end;*/
+                }
+                .info p{
+
+                }
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Site name</h1>
+            <nav>
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+                <a href="#">Link3</a>
+            </nav>
+            <div class="article">
+
+
+                <div class="main">
+
+                    <h2>Main heading here</h2>
+                    <div class="texto">
+
+
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <figure>
+                        <img src="http://4.bp.blogspot.com/-87336DolFu8/VQryS8BAeGI/AAAAAAAAA94/OS7bJEdBSZc/s1600/13.jpg" alt="">
+                    </figure>
+
+                </div>
+                <div class="info">
+                    <h3>Related info</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur </p>
+
+            </div>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
